@@ -21,7 +21,7 @@ public class Proyecto {
 
     @Column(name = "fecha_inicio", nullable = false)
     @Temporal(TemporalType.DATE)
-    @DateTimeFormat(pattern = "yyyy-MM-dd") // Agrega esta línea para definir el formato esperado
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date fechaInicio;
 
     @Enumerated(EnumType.STRING)

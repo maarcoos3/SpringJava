@@ -23,12 +23,12 @@ public class TareaController {
 @GetMapping("/crear")
 public String mostrarFormularioCrearTarea(@RequestParam(value = "proyectoId", required = false) Long proyectoId, Model model) {
     if (proyectoId == null) {
-        // Si no se pasa el proyectoId, redirige a la lista de proyectos (o maneja el error como prefieras)
+        // Si no se pasa el proyectoId, redirige a la lista de proyectos
         return "redirect:/proyectos";
     }
     Proyecto proyecto = proyectoRepository.findById(proyectoId).orElse(null);
     if (proyecto == null) {
-        // Si no se encuentra el proyecto, también puedes redirigir o mostrar un mensaje de error
+        // Si no se encuentra el proyecto redirige a la lista de proyectos
         return "redirect:/proyectos";
     }
     Tarea tarea = new Tarea();

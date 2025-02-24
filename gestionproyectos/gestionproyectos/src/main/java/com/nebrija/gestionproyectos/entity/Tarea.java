@@ -21,7 +21,7 @@ public class Tarea {
 
     @Column(name = "fecha_limite")
     @Temporal(TemporalType.DATE)
-    @DateTimeFormat(pattern = "yyyy-MM-dd") // Agrega esta línea para definir el formato esperado
+    @DateTimeFormat(pattern = "yyyy-MM-dd") 
     private Date fechaLimite;
 
     @Enumerated(EnumType.STRING)
