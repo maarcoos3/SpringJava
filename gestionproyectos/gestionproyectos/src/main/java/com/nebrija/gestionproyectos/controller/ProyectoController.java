@@ -76,7 +76,7 @@ public class ProyectoController {
         // Guardar los cambios
         proyectoRepository.save(proyectoExistente);
         
-        // Redirigir a la lista de proyectos o a donde desees
+        // Redirigir a la lista de proyectos
         return "redirect:/proyectos";
     }
 
