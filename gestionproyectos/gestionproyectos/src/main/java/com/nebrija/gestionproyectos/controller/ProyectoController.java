@@ -73,7 +73,7 @@ public class ProyectoController {
         proyectoExistente.setFechaInicio(proyectoForm.getFechaInicio());
         proyectoExistente.setEstado(proyectoForm.getEstado());
         
-        // Guardar los cambios
+        // Guardar los cambios para salvarlos
         proyectoRepository.save(proyectoExistente);
         
         // Redirigir a la lista de proyectos
