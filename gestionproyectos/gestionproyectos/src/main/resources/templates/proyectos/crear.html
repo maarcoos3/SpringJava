@@ -8,7 +8,8 @@
 <body>
   <div class="container mt-5">
     <h1 class="mb-4">Crear Proyecto</h1>
-    <form th:action="@{/proyectos}" th:object="${proyecto}" method="post">
+    <form th:action="@{/proyectos}" th:object="${proyecto}" 
+    >
       <div class="mb-3">
         <label for="nombre" class="form-label">Nombre</label>
         <input type="text" th:field="*{nombre}" class="form-control" id="nombre" placeholder="Nombre del proyecto" required>
